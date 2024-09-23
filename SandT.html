@@ -61,44 +61,57 @@
     <!-- Spinner End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0">    
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="logo-icon">
-                <a href="index.html">
-                    <img class="image-logo-about" src="img/logo/logo3.png"/>
-                </a>
-            </div>
-            <div class="ms-auto d-none d-lg-flex">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link" style="color: black; font-weight: lighter;">Home</a>
-                    <div class="nav-item dropdown">
-                        <div class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black; font-weight: lighter;">About</div>
-                        <div class="dropdown-menu bg-white m-0">
-                            <a href="greeting.html" class="dropdown-item" style="color: black; font-weight: lighter;">Greeting</a>
-                            <a href="about.html" class="dropdown-item" style="color: black; font-weight: lighter;">Introduction</a>
-                            <a href="advisor.html" class="dropdown-item" style="color: black; font-weight: lighter;">Advisor</a>
-                            <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
-                        </div>
-                        <div class="dropdown-menu bg-light m-0">
-                            <a href="greeting.html" class="dropdown-item" style="color: black; font-weight: lighter;">Greeting</a>
-                            <a href="" class="dropdown-item" style="color: black; font-weight: lighter;">Introduction</a>
-                            <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
-                        </div>
-                    </div>
-                    <a href="members.html" class="nav-item nav-link" style="color: black; font-weight: lighter;">Members</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black; font-weight: lighter;">Department</a>
-                        <div class="dropdown-menu bg-light m-0">
-                            <a href="SandT.html" class="dropdown-item" style="color: black; font-weight: lighter;">S&T</a>
-                            <a href="Research.html" class="dropdown-item" style="color: black; font-weight: lighter;">Research</a>
-                            <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0">
+        <div class="container-fluid">
+            <!-- 로고 섹션 -->
+            <a class="navbar-brand" href="index.html">
+                <img class="image-logo-about" src="img/logo/logo3.png" alt="Logo" />
+            </a>
+
+            <!-- 토글 버튼 (모바일용) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 네비게이션 링크들 -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" style="color: black; font-weight: lighter;">Home</a>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black; font-weight: lighter;">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a href="greeting.html" class="dropdown-item" style="color: black; font-weight: lighter;">Greeting</a></li>
+                            <li><a href="about.html" class="dropdown-item" style="color: black; font-weight: lighter;">Introduction</a></li>
+                            <li><a href="advisor.html" class="dropdown-item" style="color: black; font-weight: lighter;">Advisor</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="members.html" class="nav-link" style="color: black; font-weight: lighter;">Members</a>
+                    </li>
+
+                    <!-- Department Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="departmentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black; font-weight: lighter;">
+                            Department
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="departmentDropdown">
+                            <li><a href="SandT.html" class="dropdown-item" style="color: black; font-weight: lighter;">S&T</a></li>
+                            <li><a href="Research.html" class="dropdown-item" style="color: black; font-weight: lighter;">Research</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
+
 
 
     <!-- Page Header Start -->
